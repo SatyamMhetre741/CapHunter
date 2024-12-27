@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CapGuesser</title>
+    <style>
+        @media (max-width: 600px) {
+            .content input {
+                width: 90%;
+            }
+            .start button {
+                width: 80%;
+            }
+            .header {
+                font-size: 3rem;
+            }
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: cursive;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: url("anime-character-traveling.jpg");
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            overflow: hidden;
+        }
+        .header {
+            font-size: 4rem;
+            font-weight: bold;
+            text-align: center;
+            color: black;
+            text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .image {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .image img {
+            max-width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            border: 3px solid rgba(255, 255, 255, 0.7);
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 15px;
+        }
+        .content h1 {
+            font-size: 1.8rem;
+            text-align: center;
+            text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .content input {
+            height: 50px;
+            width: 350px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            text-align: center;
+            padding: 0 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            outline: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .content input:focus {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+        .start button {
+            height: 50px;
+            width: 220px;
+            border: none;
+            border-radius: 25px;
+            background: linear-gradient(45deg, #ff4d4d, #ff944d);
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .start button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        CapHunter
+    </div>
+    <div class="image">
+        <img src="teaser-earth.jpeg" alt="Teaser image of Earth">
+    </div>
+    <div class="content">
+        <div class="name">
+            <h1>Enter your name</h1>
+            <input type="text" id="namebar" placeholder="Your Name">
+        </div>
+        <div class="start">
+            <button id="startBtn">Start</button>
+        </div>
+    </div>
+
+    <script src="Guessgame1.js"></script>
+</body>
+</html>
